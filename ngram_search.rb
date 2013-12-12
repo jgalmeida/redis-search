@@ -51,8 +51,7 @@ end
 
 #TODO
 #Criar Word e persistir objecto, intersecção
-#Colocar pessos pelo match de occorências no search
-
+#Colocar pesos pelo match de occorências no search
 
 Redis.current.flushdb
 

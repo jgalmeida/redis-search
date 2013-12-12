@@ -25,15 +25,7 @@ class SimpleSearch
   end
 
   def search(word)
-    # results = []
-    # email_ids = @redis.smembers word
-
-    # email_ids.each do |id|
-    #   results << (@redis.get "person:#{id}")
-    # end
-    # results
-
-    #ALPHA ordenar por string
+    #ALPHA Sort by string
     @redis.sort word, {:by => "person:*", :order => "ALPHA asc", :get => "person:*"}
   end
 
