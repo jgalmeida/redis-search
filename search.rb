@@ -43,6 +43,8 @@ class SimpleSearch
   end
 end
 
+Redis.current.flushdb
+
 joao = Person.new("joao@mail.com")
 joao.save
 
